@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<title>Testing Gallery JS</title>
+		<link rel="icon" href="https://www.w3schools.com/favicon.ico" type="image/x-icon">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+</head>
+
+<body>
+	<div id="page" class="site">
+		<header>
+			<div class="container" id="gallery">
+				<div class="row">
+					<div class="col-md-12">
+						<center><button id="show-form" class="btn btn-info">Add Image</button></center>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div id="gallery-form-container">
+							<div id="close-form"><span class="glyphicon glyphicon-remove"></span></div>
+							<form method="post" id="gallery-form">
+								<output id="edit"></output>
+								<textarea name="description" required placeholder="Write Photo Description" id="description" maxlength="200" size="300" ></textarea>
+								<label class="btn btn-default"><input type="file" id="files" name="files"  /></label>
+								<output id="list"></output>
+								<input type='hidden' id="form-edition" value="-1" />
+								<button class="btn btn-warning" type="submit">Submit</button>
+							</form>
+						</div>
+					</div>
+				</div>
+
+			</header>
+			<div id="clearfix"><br /></div>
+			<div id="content" class="site-content">
+				<div class="container">
+					<div class="content-wrapper row">
+						<div id="gallery-list" class="col-md-12">
+					</div>
+					<div class="row">
+					<div class="col-md-12">
+						<div id="counter"><strong><span>Items </span></strong></div>
+					</div>
+				</div>
+				</div>
+			</div>
+			<footer>
+
+				<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+				<script src="./js/app.js"></script>
+				<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+				<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+			</footer>
+		</div>
+	</body>
+</html>
